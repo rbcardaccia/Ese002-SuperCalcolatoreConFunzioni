@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Ese002-SuperCalcolatoreConFunzioni
+PROJECTNAME=ese002
 
 # Active Configuration
 DEFAULTCONF=Debug

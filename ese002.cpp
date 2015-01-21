@@ -1,5 +1,8 @@
 #include <stdio.h>
+
 #include <stdlib.h>
+
+
 
 /* PROTOTIPI DELLE FUNZIONI */
 
@@ -15,7 +18,7 @@
 
  * 
 
- * La definizione della funzione ï¿½ ottenuta mediante la definizione del suo
+ * La definizione della funzione è ottenuta mediante la definizione del suo
 
  * corpo. La parte definitoria si trova dopo la funzione main. 
 
@@ -63,7 +66,7 @@ int main(int argc, char** argv) {
 
     getchar();
 
-    /* La presenza di questa chiamata alla funzione getchar() ï¿½ dovuto al funzionamento
+    /* La presenza di questa chiamata alla funzione getchar() è dovuto al funzionamento
 
      * "buffered line" definito dallo standard POSIX.
 
@@ -83,7 +86,7 @@ int main(int argc, char** argv) {
 
     puts("5 -  Disione a/b con parte intera e parte frazionale");
 
-    puts("6 -  Elevamento a potenza a^b (l'esponente ï¿½ troncato ad intero)");
+    puts("6 -  Elevamento a potenza a^b (l'esponente è troncato ad intero)");
 
     scelta = getchar();
 
@@ -145,7 +148,7 @@ int main(int argc, char** argv) {
 
         default:
 
-            puts("Nuove operazioni saranno disponibili a breve!\n");        
+            puts("Nuove oprazioni saranno disponibili a breve!\n");        
 
     }
 
@@ -159,7 +162,11 @@ float somma(float a, float b) {
 
     float risultato;
 
+    
+
     risultato = a + b;
+
+    
 
     return risultato;
 
@@ -171,7 +178,11 @@ float sottrazione(float a, float b) {
 
     float risultato;
 
+    
+
     risultato = a - b;
+
+    
 
     return risultato;
 
@@ -183,7 +194,11 @@ float prodotto(float a, float b) {
 
     float risultato;
 
+    
+
     risultato = a * b;
+
+    
 
     return risultato;
 
@@ -195,7 +210,11 @@ float divisione(float a, float b) {
 
     float risultato;
 
+    
+
     risultato = a / b;    
+
+    
 
     return risultato;
 
@@ -207,7 +226,11 @@ int quoziente(int a, int b) {
 
     int risultato;
 
-     risultato = a / b;
+    
+
+    risultato = a / b;
+
+    
 
     return risultato;
 
@@ -219,7 +242,11 @@ float frazionale(int a, int b) {
 
     float risultato;
 
+    
+
     risultato = ((float)a/(float)b)- a/b;  
+
+    
 
     return risultato;
 
@@ -230,6 +257,8 @@ float frazionale(int a, int b) {
 float potenza(float base, int esponente) {
 
     float risultato = 1;
+
+    
 
     for(; esponente > 0; esponente--)
 
