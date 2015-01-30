@@ -1,40 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/* PROTOTIPI DELLE FUNZIONI */
-
-/* La dichiarazione e la definizione di una funzione possono essere separate.
-
- * 
-
- * Il prototipo della funzione costituisce l'informazione necessaria al suo
-
- * utilizzo: nome, numero e tipo dei parametri di ingresso, tipo del (unico)
-
- * parametro di uscita.
-
- * 
-
- * La definizione della funzione � ottenuta mediante la definizione del suo
-
- * corpo. La parte definitoria si trova dopo la funzione main. 
-
- */
-
-float somma(float a, float b);
-
-float sottrazione(float a, float b);
-
-float prodotto(float a, float b);
-
-float divisione(float a, float b);
-
-int quoziente(int a, int b);
-
-float frazionale(int a, int b);
-
-float potenza(float base, int esponente);
-
+#include "Mialibreria.h"
 
 
 int main(int argc, char** argv) {
@@ -62,12 +28,6 @@ int main(int argc, char** argv) {
     
 
     getchar();
-
-    /* La presenza di questa chiamata alla funzione getchar() � dovuto al funzionamento
-
-     * "buffered line" definito dallo standard POSIX.
-
-     */
 
     
 
@@ -152,91 +112,3 @@ int main(int argc, char** argv) {
     return (EXIT_SUCCESS);
 
 }
-
-
-
-float somma(float a, float b) {
-
-    float risultato;
-
-    risultato = a + b;
-
-    return risultato;
-
-}
-
-
-
-float sottrazione(float a, float b) {
-
-    float risultato;
-
-    risultato = a - b;
-
-    return risultato;
-
-}
-
-
-
-float prodotto(float a, float b) {
-
-    float risultato;
-
-    risultato = a * b;
-
-    return risultato;
-
-}
-
-
-
-float divisione(float a, float b) {
-
-    float risultato;
-
-    risultato = a / b;    
-
-    return risultato;
-
-}
-
-
-
-int quoziente(int a, int b) {
-
-    int risultato;
-
-     risultato = a / b;
-
-    return risultato;
-
-}
-
-
-
-float frazionale(int a, int b) {
-
-    float risultato;
-
-    risultato = ((float)a/(float)b)- a/b;  
-
-    return risultato;
-
-}
-
-
-
-float potenza(float base, int esponente) {
-
-    float risultato = 1;
-
-    for(; esponente > 0; esponente--)
-
-        risultato *= base;
-
-                
-
-    return risultato;
-    }
-    
